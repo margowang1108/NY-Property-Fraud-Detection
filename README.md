@@ -6,7 +6,7 @@ This notebook has good example algorithms to do a forensic-type analysis, lookin
 
 After I build the variables I know I have lots of correlations and too high dimensionality so I need to remove correlations and reduce dimensionality. Since I don't have a dependent variable the easiest useful thing to do is PCA. I z scale, do PCA, keep the top PCs, then z scale again in order to make each retained PC equally important (optional step).
 
-We use two different anomaly detection (fraud) algorithms. The first just looks for outliers in the final scaled PC space using a Minkowski distance from the origin. The second method makes a simple autoencoder and the fraud score is then the reproduction error. It's important to note that each/either of these two methods would be a fine fraud score by itself.
+I use two different anomaly detection (fraud) algorithms. The first just looks for outliers in the final scaled PC space using a Minkowski distance from the origin. The second method makes a simple autoencoder and the fraud score is then the reproduction error. It's important to note that each/either of these two methods would be a fine fraud score by itself.
 
 Since I have two scores and I don't really know which one is better I just average the two scores. To do this I replace the score with its rank order and then average the rank-ordered scores for our final score.
 
