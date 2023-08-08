@@ -12,6 +12,4 @@ Since I have two scores and I don't really know which one is better I just avera
 
 Finally, I sort all the records by this final score and explore the top n records. To help the investigation I show which of the variables are driving these top-scoring records with a heat map of the variable scores, which can point the investigators to what's making the high score for these top-scoring records.
 
-This problem is an invented problem to demonstrate the process of building unsupervised fraud models. The data set is real and the invented problem is realistic. What's lacking the most is the ability to interact with domain experts in order to do proper exclusions and design good/appropriate variables.
-
 The data can be found here: https://data.cityofnewyork.us/Housing-Development/Property-Valuation-and-Assessment-Data/rgy2-tti8
